@@ -1,4 +1,4 @@
-k8slabel = "jenkins-pipeline-${UUID.randomUUID().toString()}"
+def k8slabel = "jenkins-pipeline-${UUID.randomUUID().toString()}"
 def slavePodTemplate = """
       metadata:
         labels:
